@@ -5,7 +5,14 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('resources', 'resources')],
+    datas=[
+        ('resources', 'resources'),
+        ('src/__init__.py', 'src/.'),
+        ('src/UI.py', 'src/.'),
+        ('src/Setup.py', 'src/.'),
+        ('setup.ini', '.'),
+        ('icon.ico', '.')
+        ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,4 +42,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='icon.ico'
 )
