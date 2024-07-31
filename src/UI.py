@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 
+from src import Setup
+
 
 class UI:
     width = "300"
@@ -18,6 +20,13 @@ class UI:
     def __init__(self):
         self.generate_window()
         self.create_menu()
+        self.set_icon()
+
+    def set_icon(self, icon_path = None):
+        if icon_path is None:
+            icon_path = Setup.get_path() + "/icon.ico"
+            
+        self.root.iconbitmap(icon_path)
     
     def generate_window(self):
         self.root = tk.Tk()
