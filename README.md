@@ -5,7 +5,7 @@
 - Python 3x
 
 ## Clonar o descargar repositorio
-> Para clonar el repositorio debes tener instalado [Git](https://git-scm.com/) en tu equipo. Usa el siguiente comando para clonar el repositorio:
+> Para clonar el repositorio debes tener instalado <a href="https://git-scm.com/" target="_blank" title="Ir a GIT">Git</a> en tu equipo. Usa el siguiente comando para clonar el repositorio:
 ```
 git clone https://github.com/andresagab/pptexe-pyapp.git
 ```
@@ -32,7 +32,7 @@ git clone https://github.com/andresagab/pptexe-pyapp.git
 ## Cambiar Icono de la aplicación
 > Remplaza el archivo `icon.ico` para cambiar el icono de la aplicación, recuerda que este debe tener el nombre `icon.ico`
 > La extensión debe ser `.ico`
-> El icono incluido como ejemplo fue tomado de: [icon-icons](https://icon-icons.com/es/download/51077/ICO/512/)
+> El icono incluido como ejemplo fue tomado de: <a href="https://icon-icons.com/es/download/51077/ICO/512/" target="_blank" title="Ir al Icono">icon-icons</a>
 
 ## Crear y activar entorno virtual
 > Para instalar las dependecias de este proyecto es recomendable utilizar un **Entorno Virtual** de trabajo.
