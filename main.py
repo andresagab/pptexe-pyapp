@@ -54,6 +54,10 @@ def initialize_app():
         else:
             messagebox.showerror("Error", f"No se encuentra el archivo de recursos: {resource_path}")
             return
+        # copy all extra files from resources to app_files_dir
+        for file in os.listdir(os.path.join(get_app_path(), "resources")):
+            if file != ppt_file_name and file != 'put_files_here':
+                shutil.copyfile(os.path.join(os.path.join(get_app_path(), "resources"), file), os.path.join(app_files_dir, file))
 
 
 def open_presentation():
